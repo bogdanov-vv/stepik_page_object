@@ -1,6 +1,5 @@
 from selenium.webdriver.common.by import By
 
-
 class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 
@@ -20,3 +19,14 @@ class ProductPageLocators():
     ADD_ALERT_INNER = (By.CSS_SELECTOR, "[class='alertinner '] strong") #Alert success add article
     PRICE_BEFORE = (By.CSS_SELECTOR, "[class='price_color']") #Price before in basket
     PRICE_AFTER = (By.CSS_SELECTOR, "[class='alert alert-safe alert-noicon alert-info  fade in'] div strong") #Price after in basket
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "[class='alert alert-safe alert-noicon alert-success  fade in']") #Success message add art in basket
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+
+class BasketPageLocators():
+    BASKET_TREE = (By.CSS_SELECTOR, "[class='basket-mini pull-right hidden-xs'] [class='btn btn-default']")
+    BASKET_ITEMS = (By.CSS_SELECTOR, "[class='basket-items']")
+    BASKET_MESSAGE = (By.CSS_SELECTOR, "[id='content_inner'] p")
+
